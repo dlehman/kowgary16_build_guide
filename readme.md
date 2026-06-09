@@ -3,7 +3,7 @@
 This is a build guide for the [kowgary16](https://github.com/ChrisChrisLoLo/kowgary16) macropad.
 
 ### Disclaimer
-I did not design this macropad and i'm not associated with the author or Chosfox in any way. I only documented the exact steps I followed, in case it is of use to a future traveler. Some or even most of these steps are likely "obvious" to an experienced electronics tinkerer, but then this guide isn't intended for you!
+I did not design this macropad and i'm not associated with the author or Chosfox in any way. I documented the steps I followed in case it is of use to a future traveler. Some or even most of these steps are likely "obvious" to an experienced electronics tinkerer, but then this guide isn't intended for you!
 
 These are the steps I followed, but YMMV. I can't promise the exact same steps will work for you in the future, and you follow them at your own risk.
 
