@@ -91,8 +91,7 @@ The assembled PCB from JLCPCB doesn't included the hot swap sockets. Fortunately
 
 <img src="resources/img/kailh_pg1350_sockets.jpg" alt="Kailh pg1350 hot swap socket" width="50%">
 
-**Kailh PG1350 Low Profile Hot Swap Sockets**
-https://www.amazon.ca/Chocolate-Switches-Mechanical-Keyboard-Hot-swappable/dp/B0CZL36HY1
+Amazon.ca (non-affiliate): [Kailh PG1350 Low Profile Hot Swap Sockets](https://www.amazon.ca/Chocolate-Switches-Mechanical-Keyboard-Hot-swappable/dp/B0CZL36HY1)
 
 You need **16 sockets**, but get a few extra, just in case.
 
@@ -102,7 +101,7 @@ Note that some sockets are positioned "upside down" (rotated 180° when viewed f
 
 Once the sockets are all installed, carefully push your Choc switches through from the other side (ie. the "top" of the board). Be careful you don't bend either pin when inserting. Again, they only fit into each socket one way.
 
-## 4. Test the Board
+## 4. "Test" the Board
 
 **Note:** If it's still case-less, please make sure your board is not sitting on anything metal when you plug it in.
 
@@ -122,28 +121,31 @@ There are several ways to flash a firmware file on a board. I used QMK Toolbox.
 5. Click the little reset button on the bottom of the macropad to put board into DFU mode
 6. Click the "Flash" button in QMK Toolbox and let it do it's thing. It should only take a few seconds, but **do not** unplug the board while it's being flashed.
 
-Once the firmware is loaded, each key on the macropad should do *something*. I have [Karabiner-Elements](https://karabiner-elements.pqrs.org) installed on my Mac, and it comes with a utility called _Karabiner-EventViewer_ which is very useful because it shows every single device _event_ detected, not just key presses from a regular keyboard layout. But there is a [plethora](https://keyboardchecker.com) [of](https://keyboard-tester.com/) [keyboard](https://keyboardtest.io/) [testing](https://www.keyboardtest.org) sites out there.
+## 6. Actually Testing
+Once the firmware is loaded, each key on the macropad should do *something*. I have [Karabiner-Elements](https://karabiner-elements.pqrs.org) installed on my Mac, and it comes with a utility called _Karabiner-EventViewer_ which is very useful because it shows every single device _event_ detected, not just key presses from a regular keyboard layout. If you downloaded the Vial app, it has a "matrix tester" tab you can use. There are a whole [plethora](https://keyboardchecker.com) [of](https://keyboard-tester.com/) [other](https://keyboardtest.me) [keyboard](https://keyboardtest.io/) [testing](https://www.keyboardtest.org) sites out there to choose from.
 
- If one of your macro pad keys doesn't do _anything_, remove the key switch and check that you didn't bend a pin when you inserted it. You may also have to check the soldering connection on the hot swap socket if the pins looked fine. If you were too quick, you can get a cold solder joint with a hairline crack that doesn't make a full connection or is flaky.
+If one of your macro pad keys doesn't do _anything_, carefully remove the key switch and check that you didn't bend a pin when you inserted it. If the pins look fine, you may also have to check the soldering connection on the hot swap socket. If you were moving a little too quickly, you can get a cold solder joint with a hairline crack that doesn't make a full connection or is just flaky. Often you hold the soldering iron to the joint (not too long though) to re-flow the solder, it will fix it.
 
-## 6. Case
+## 7. Case
 The original designer included CNC files to have a case for the macro pad machined out of aluminum at JLCPCB.
 
 I have a 3D printer, so I wanted to print the bottom case for myself. I took the CNC .STEP file and used an [online conversion tool](https://imagetostl.com/convert/file/step/to/stl) to generate an STL, and printed that, and it seemed to work great! Again, [there are many different conversion tools](https://kagi.com/search?q=step+to+stl+converter) and approaches.
 
 Here is the [case .STL file](resources/case/kowgary16_case_checked.stl) I printed.
 
-## 7. Remap Keys (Vial)
-The `kowgary` firmware is Vial compatible, which means you can use a GUI to remap keys rather than rewriting the firmware (which you can also do). Plug in your board and go to the [Vial Homepage](https://get.vial.today/)
+## 8. Remap Keys (Vial)
+The `kowgary` firmware is Vial compatible, which means you can use a GUI to remap keys rather than having to rewrite the firmware and reflash the board for every change. Plug in your board and go to the [Vial Homepage](https://get.vial.today/).
 
-Some of the macropad keys I mapped directly in Vial (eg. Vol up/down, Brightness up/down, Play/pause, Mute, etc). For the rest of the keys, I chose to map an uncommon key so that it would never conflict with my existing keyboard. I have a 65% keyboard I use as my daily driver, so it's easy to choose non-conflicting key presses. But there are also a number of standard key presses that don't normally appear on even full-sized keyboards. For example, function keys F13-F23 are perfectly valid, but most keyboard don't include them. I mapped many of my macropad keys to F13, F14, etc.
+Some of the macropad keys I mapped directly to the function I wanted (eg. Vol up/down, Brightness up/down, Play/pause, Mute, etc). For the rest of the keys, I chose to map an uncommon key so that it would never conflict with my existing keyboard. I have a 65% keyboard I use as my daily driver, so it's easy to choose non-conflicting key presses. But there are also a number of standard key presses that don't normally appear on even full-sized keyboards. For example, function keys F13-F23 are perfectly valid, but most keyboard don't include them. I mapped some of my macropad keys to F13, F14, etc.
 
-Then you can use a keyboard macro, etc. to have these function keys do something of your choice.
+Then you can use the function key to invoke a keyboard macro of some kind.
 
-## 8. Remap More Keys (Keyboard Maestro)
-To attach macros or scripts to your macropad that are not simply a standard keypress, you can use a tool like Keyboard Maestro (KM). For example, at work I use Teams all the time. I created custom KM macros to toggle my mic in Teams, toggle video, open/close the chat sidebar, and leave a call. In KM, I map the macro pad key that send F13 to a macro that toggles my mic.
+## 9. Remap More Keys (Keyboard Maestro)
+To attach macros or scripts to your macropad that are not simply a standard keypress, you can use a tool like [Keyboard Maestro](https://www.keyboardmaestro.com/main/) (KM).
 
-(Teams is an Electron app, so you sometimes have to go to unreasonable and laughable lengths to "automate" something that you think would be straightforward. For example, to have a macro that opens/closes the chat sidebar in a Teams call, I finally had to resort to using the "detect image" function of KM to find the chat icon in the top menu (two different states), "move mouse to middle of those coordinates", and then simulate a mouse click. It does work reliably, but it's ugly, and breaks whenever Microsoft "tweaks" Teams, which is often.)
+For example, at work I use Teams all the time. I have custom macros in KM to toggle my mic, toggle my webcam, open/close the chat sidebar, and leave a call. Then I can assign the macro pad F13 key to trigger my "toggle mic" macro.
+
+(Teams is an Electron app, so you sometimes have to go to unreasonable and laughable lengths to "automate" something that you think would be straightforward. For example, to have a macro that opens/closes the chat sidebar in a Teams call, I finally had to resort to using the "detect image" function of KM to find the chat icon in the top menu (two different states), "move mouse to middle of those coordinates", and then simulate a mouse click at that location. It does work reliably, but it's ugly, and breaks whenever Microsoft "tweaks" Teams, which is annoyingly often.)
 
 ## Next Steps
 
