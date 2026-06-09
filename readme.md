@@ -81,22 +81,22 @@ I copied the order summary and asked ChatGPT to do a sanity check, just to make 
 
 At the time I ordered, the cost for my three only-printed boards was USD $0.80 ea. and for my two assembled boards was **USD $19.19 ea**. for a order total of USD $40.77 + shipping and taxes. If your total is _much_ higher, things may have chanced, but go back and double-check for extended components.
 
-## 3. Add Hotswap Sockets
+## 3. Add Hot Swap Sockets
 
 You now have to wait for a period of time, dependant on where you live and what shipping option you chose. I just chose the cheapest option and it took a few weeks to show up at my residential address in Canada.
 
 The assembled PCB from JLCPCB doesn't included the hot swap sockets. Fortunately, if you have any minor soldering experience, it is pretty straightforward to add them yourself. So while you are waiting for the boards, you should order some hot swap sockets so you don't have to wait again.
 
-**Note:** There are several kinds of hotswap sockets available. Only **one specific type** will fit correctly on this board. Fortunately it has a recognizable shape, so you can visually distinguish the two main types. Just pay attention when ordering! (Yes, I ordered the wrong type the first time.)
+**Note:** There are several kinds of hot swap sockets available. Only **one specific type** will fit correctly on this board. Fortunately it has a recognizable shape, so you can visually distinguish the two main types. Just pay attention when ordering! (Yes, I ordered the wrong type the first time.)
 
 **Kailh PG1350 Low Profile Hot Swap Sockets**
 https://www.amazon.ca/Chocolate-Switches-Mechanical-Keyboard-Hot-swappable/dp/B0CZL36HY1
 
 You need **16 sockets**, but get a few extra, just in case.
 
-Carefully solder each hotswap socket to the bottom of the board. The sockets should line up with the solder pads; they only fit into the PCB one way.
+Carefully solder each hot swap socket to the bottom of the board. The sockets should line up with the solder pads; they only fit into the PCB one way.
 
-Note that some sockets are positioned "upside down" (rotated 180° when viewed from the bottom) to work around the placement of the other components. This is just fine because the Chosfox key caps that fit on these key switches are the same when flipped 180°, so having some hotswap sockets "upside down" makes no difference to the final appearance or functionality.
+Note that some sockets are positioned "upside down" (rotated 180° when viewed from the bottom) to work around the placement of the other components. This is just fine because the Chosfox key caps that fit on these key switches are the same when flipped 180°, so having some hot swap sockets "upside down" makes no difference to the final appearance or functionality.
 
 Once the sockets are all installed, carefully push your Choc switches through from the other side (ie. the "top" of the board). Be careful you don't bend either pin when inserting. Again, they only fit into each socket one way.
 
