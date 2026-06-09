@@ -11,8 +11,6 @@ These are the steps I followed, but YMMV. I can't promise the exact same steps w
 
 I was looking for a 12- or 16-key macropad, but specifically with Kailh Choc low profile switches. When you narrow it down that much, there aren't a ton of options. Many macropads use MX switches, which is just fine, but not what I wanted in this case.
 
-**Aside:** If you need inspiration on how to have fun with macropads, please read Marcin Wichary's engaging article [Key, in sight: A guide, of sorts, to keyboard customization](https://aresluna.org/key-in-sight/).
-
 ### Important:
 - This macropad will **only work** with [Kailh Choc v1](https://chosfox.com/products/kailh-chocs) low profile switches and [Chosfox CFX Keycaps](https://chosfox.com/products/chocfox-cfx-choc-keycaps)
 - It **will not work** with Choc v2 low profile switches, regular Choc key caps, or regular MX key switches or key caps.
@@ -62,13 +60,13 @@ You should also watch for parts that were matched but flagged as "Extended". An 
 
 For any part row, click the magnifying glass icon to bring up a list of compatible parts. Usually the parts near the top of the list are recommended: ideally choose one marked "basic" and has "JLCPCB Stock" greater than 0. Click the "Select" button for part row you are choosing.
 
-For example, for these capacitors, the specified part is in the "extended" category. If you click the magnifying glass, it brings up a list of comparable parts. The top row shows a similar component in "basic" where each part costs US$0.0021 instead of US$0.0520. Yes, the price difference in dollars is not much, but you get the point.
-
 ![Select Parts](resources/img/search-parts.png)
+
+For example, for these capacitors (above), the specified part is in the "extended" category. If you click the magnifying glass, it brings up a list of comparable parts. The top row shows a similar component in "basic" where each part costs US$0.0021 instead of US$0.0520. Yes, the price difference in dollars is not much, but you get the point. It's two clicks, so you may as well pay $0.06 instead of $1.45!
 
 For each row that shows unmatched or "extended", click the magnifying glass and find an in-stock part you like.
 
-**Note:** For some reason, the USB-C Receptacle part row was not selected by default. Make sure you check this row to have it installed as well.
+**Note:** For some reason, when I went through this process, the USB-C Receptacle part row was not selected by default. Maybe because it required "extra work". Make sure you check this row to have it installed as well.
 
 Once you are happy with your parts selections, choose "Next".
 
@@ -76,7 +74,7 @@ Once you are happy with your parts selections, choose "Next".
 
 Review the 2D/3D model to do a sanity check and make sure it looks like you'd expect. Mine looked like this:
 
-![2D PCB view](resources/img/bottom_pcb_component_placements.png)
+<img src="resources/img/bottom_pcb_component_placements.png" alt="2D PCB view" width="75%">
 
 ### C. Order Summary
 I copied the order summary and asked ChatGPT to do a sanity check, just to make sure.
@@ -144,6 +142,10 @@ Then you can use a keyboard macro, etc. to have these function keys do something
 To attach macros or scripts to your macropad that are not simply a standard keypress, you can use a tool like Keyboard Maestro (KM). For example, at work I use Teams all the time. I created custom KM macros to toggle my mic in Teams, toggle video, open/close the chat sidebar, and leave a call. In KM, I map the macro pad key that send F13 to a macro that toggles my mic.
 
 (Teams is an Electron app, so you sometimes have to go to unreasonable and laughable lengths to "automate" something that you think would be straightforward. For example, to have a macro that opens/closes the chat sidebar in a Teams call, I finally had to resort to using the "detect image" function of KM to find the chat icon in the top menu (two different states), "move mouse to middle of those coordinates", and then simulate a mouse click. It does work reliably, but it's ugly, and breaks whenever Microsoft "tweaks" Teams, which is often.)
+
+## Next Steps
+
+If you need inspiration on how to have fun with macropads, please read Marcin Wichary's engaging article [Key, in sight: A guide, of sorts, to keyboard customization](https://aresluna.org/key-in-sight/).
 
 ## Resources
 - [ChrisChrisLoLo/kowgary16: A low profile ultraportable 16 key macropad](https://github.com/ChrisChrisLoLo/kowgary16)
