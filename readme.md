@@ -1,6 +1,6 @@
 # kowgary16: Macropad Build Guide
 
-This is a build guide for the [kowgary16](https://github.com/ChrisChrisLoLo/kowgary16) macro pad.
+This is a build guide for the [kowgary16](https://github.com/ChrisChrisLoLo/kowgary16) macropad.
 
 ### Disclaimer
 I did not design this macropad and i'm not associated with the author or Chosfox in any way. I only documented the exact steps I followed, in case it is of use to a future traveler. Some or even most of these steps are likely "obvious" to an experienced electronics tinkerer, but then this guide isn't intended for you!
@@ -124,10 +124,10 @@ There are several ways to flash a firmware file on a board. I used QMK Toolbox.
 ## 6. Actually Testing
 Once the firmware is loaded, each key on the macropad should do *something*. I have [Karabiner-Elements](https://karabiner-elements.pqrs.org) installed on my Mac, and it comes with a utility called _Karabiner-EventViewer_ which is very useful because it shows every single device _event_ detected, not just key presses from a regular keyboard layout. If you downloaded the Vial app, it has a "matrix tester" tab you can use. There are a whole [plethora](https://keyboardchecker.com) [of](https://keyboard-tester.com/) [other](https://keyboardtest.me) [keyboard](https://keyboardtest.io/) [testing](https://www.keyboardtest.org) sites out there to choose from.
 
-If one of your macro pad keys doesn't do _anything_, carefully remove the key switch and check that you didn't bend a pin when you inserted it. If the pins look fine, you may also have to check the soldering connection on the hot swap socket. If you were moving a little too quickly, you can get a cold solder joint with a hairline crack that doesn't make a full connection or is just flaky. Often you hold the soldering iron to the joint (not too long though) to re-flow the solder, it will fix it.
+If one of your macropad keys doesn't do _anything_, carefully remove the key switch and check that you didn't bend a pin when you inserted it. If the pins look fine, you may also have to check the soldering connection on the hot swap socket. If you were moving a little too quickly, you can get a cold solder joint with a hairline crack that doesn't make a full connection or is just flaky. Often you hold the soldering iron to the joint (not too long though) to re-flow the solder, it will fix it.
 
 ## 7. Case
-The original designer included CNC files to have a case for the macro pad machined out of aluminum at JLCPCB.
+The original designer included CNC files to have a case for the macropad machined out of aluminum at JLCPCB.
 
 I have a 3D printer, so I wanted to print the bottom case for myself. I took the CNC .STEP file and used an [online conversion tool](https://imagetostl.com/convert/file/step/to/stl) to generate an STL, and printed that, and it seemed to work great! Again, [there are many different conversion tools](https://kagi.com/search?q=step+to+stl+converter) and approaches.
 
@@ -140,10 +140,10 @@ Some of the macropad keys I mapped directly to the function I wanted (eg. Vol up
 
 Then you can use the function key to invoke a keyboard macro of some kind.
 
-## 9. Remap More Keys (Keyboard Maestro)
-To attach macros or scripts to your macropad that are not simply a standard keypress, you can use a tool like [Keyboard Maestro](https://www.keyboardmaestro.com/main/) (KM).
+## 9. Assign Macros
+To attach macros or scripts to your macropad keys that are not simply a standard keypress, you can use a tool like [Keyboard Maestro](https://www.keyboardmaestro.com/main/) (KM).
 
-For example, at work I use Teams all the time. I have custom macros in KM to toggle my mic, toggle my webcam, open/close the chat sidebar, and leave a call. Then I can assign the macro pad F13 key to trigger my "toggle mic" macro.
+For example, at work I use Teams all the time. I have custom macros in KM to toggle my mic, toggle my webcam, open/close the chat sidebar, and leave a call. Then I can assign the macropad F13 key to trigger my "toggle mic" macro.
 
 (Teams is an Electron app, so you sometimes have to go to unreasonable and laughable lengths to "automate" something that you think would be straightforward. For example, to have a macro that opens/closes the chat sidebar in a Teams call, I finally had to resort to using the "detect image" function of KM to find the chat icon in the top menu (two different states), "move mouse to middle of those coordinates", and then simulate a mouse click at that location. It does work reliably, but it's ugly, and breaks whenever Microsoft "tweaks" Teams, which is annoyingly often.)
 
