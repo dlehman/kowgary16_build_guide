@@ -89,6 +89,8 @@ The assembled PCB from JLCPCB doesn't included the hot swap sockets. Fortunately
 
 **Note:** There are several kinds of hot swap sockets available. Only **one specific type** will fit correctly on this board. Fortunately it has a recognizable shape, so you can visually distinguish the two main types. Just pay attention when ordering! (Yes, I ordered the wrong type the first time.)
 
+<img src="resources/img/kailh_pg1350_sockets.jpg" alt="Kailh pg1350 hot swap socket" width="50%">
+
 **Kailh PG1350 Low Profile Hot Swap Sockets**
 https://www.amazon.ca/Chocolate-Switches-Mechanical-Keyboard-Hot-swappable/dp/B0CZL36HY1
 
