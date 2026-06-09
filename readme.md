@@ -3,9 +3,9 @@
 This is a build guide for the [kowgary16](https://github.com/ChrisChrisLoLo/kowgary16) macropad.
 
 ### Disclaimer
-I did not design this macropad and i'm not associated with the author or Chosfox in any way. I documented the steps I followed in case it is of use to a future traveler. Some or even most of these steps are likely "obvious" to an experienced electronics tinkerer, but then this guide isn't intended for you!
+_I did not design this macropad and i'm not associated with the author or Chosfox in any way. I documented the steps I followed in case it is of use to a future traveler. Some or even most of these steps are likely "obvious" to an experienced electronics tinkerer, but then this guide isn't intended for you!_
 
-These are the steps I followed, but YMMV. I can't promise the exact same steps will work for you in the future, and you follow them at your own risk.
+_These are the steps I followed, but YMMV. I can't promise the exact same steps will work for you in the future, and you follow them at your own risk._
 
 ## Introduction
 
@@ -146,6 +146,8 @@ To attach macros or scripts to your macropad keys that are not simply a standard
 For example, at work I use Teams all the time. I have custom macros in KM to toggle my mic, toggle my webcam, open/close the chat sidebar, and leave a call. Then I can assign the macropad F13 key to trigger my "toggle mic" macro.
 
 (Teams is an Electron app, so you sometimes have to go to unreasonable and laughable lengths to "automate" something that you think would be straightforward. For example, to have a macro that opens/closes the chat sidebar in a Teams call, I finally had to resort to using the "detect image" function of KM to find the chat icon in the top menu (two different states), "move mouse to middle of those coordinates", and then simulate a mouse click at that location. It does work reliably, but it's ugly, and breaks whenever Microsoft "tweaks" Teams, which is annoyingly often.)
+
+If you're on Windows, I've heard good things about [AutoHotKey](https://www.autohotkey.com) but I've never tried it myself.
 
 ## Next Steps
 
