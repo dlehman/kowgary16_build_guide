@@ -2,11 +2,12 @@
 
 This is a build guide for the [kowgary16](https://github.com/ChrisChrisLoLo/kowgary16) macro pad.
 
+### Disclaimer
 I did not design this macropad and i'm not associated with the author or Chosfox in any way. I only documented the exact steps I followed, in case it is of use to a future traveler. Some or even most of these steps are likely "obvious" to an experienced electronics tinkerer, but then this guide isn't intended for you!
 
-**Disclaimer:** These are the steps I followed, but YMMV. I can't promise the exact same steps will work for you in the future, and you follow them at your own risk.
+These are the steps I followed, but YMMV. I can't promise the exact same steps will work for you in the future, and you follow them at your own risk.
 
-### Introduction
+## Introduction
 
 I was looking for a 12- or 16-key macropad, but specifically with Kailh Choc low profile switches. When you narrow it down that much, there aren't a ton of options. Many macropads use MX switches, which is just fine, but not what I wanted in this case.
 
