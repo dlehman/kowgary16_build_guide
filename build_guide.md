@@ -1,9 +1,14 @@
 # kowgary16: Macropad Build Guide
 
-### Introduction
-I was looking for a 12- or 16-key macropad, but specifically with Kailh Choc low profile switches. When you narrow it down that much, there aren't a ton of options. Many macropads use MX switches, which is just fine, but not what I wanted in this case.
+This is a build guide for the [kowgary16](https://github.com/ChrisChrisLoLo/kowgary16) macro pad.
 
-**Disclaimer:** I did not design this macropad and i'm not associated with the author or Chosfox. I only thought I would document the exact steps I followed, in case it is of use to a future traveler. Some or even most of these steps are likely "obvious" to an experienced electronics tinkerer, but i'm just trying to be thorough.
+I did not design this macropad and i'm not associated with the author or Chosfox in any way. I only documented the exact steps I followed, in case it is of use to a future traveler. Some or even most of these steps are likely "obvious" to an experienced electronics tinkerer, but then this guide isn't intended for you!
+
+**Disclaimer:** These are the steps I followed, but YMMV. I can't promise the exact same steps will work for you in the future, and you follow them at your own risk.
+
+### Introduction
+
+I was looking for a 12- or 16-key macropad, but specifically with Kailh Choc low profile switches. When you narrow it down that much, there aren't a ton of options. Many macropads use MX switches, which is just fine, but not what I wanted in this case.
 
 **Aside:** If you need inspiration on how to have fun with macropads, please read Marcin Wichary's engaging article [Key, in sight: A guide, of sorts, to keyboard customization](https://aresluna.org/key-in-sight/).
 
@@ -13,7 +18,7 @@ I was looking for a 12- or 16-key macropad, but specifically with Kailh Choc low
 
 ## 1. Clone Git repo
 
-First, clone the [kowgary](https://github.com/ChrisChrisLoLo/kowgary16) repo from github. It has the files for manufacturing the PCB and case.
+First, clone the [kowgary16](https://github.com/ChrisChrisLoLo/kowgary16) repo from github. It has the files for manufacturing the PCB and case.
 
 ## 2. Manufacturing
 [PCBWay](https://www.pcbway.com/) and [JLCPCB](https://jlcpcb.com/) both allow you to have a PCB manufactured for an absurdly low price (this still feels like magic to me. 12-year-old me would not have believed it). I used JLCPCB this time. I have used them to print a few PCBs in the past, but I never had the PCB assembled with electronic parts as part of the process. I decided to try that out, to at least learn something. Hopefully it works!
