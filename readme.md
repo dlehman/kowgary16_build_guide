@@ -1,5 +1,7 @@
 # kowgary16: Macropad Build Guide
 
+<img src="resources/img/kowgary16.jpeg" alt="kowgary16 macro pad" width="50%">
+
 This is a build guide for the [kowgary16](https://github.com/ChrisChrisLoLo/kowgary16) macropad.
 
 ### Disclaimer
